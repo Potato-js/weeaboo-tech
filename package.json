@@ -4,8 +4,8 @@
   "homepage": "https://potato-js.github.io/weeaboo-tech",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build && next export",
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
